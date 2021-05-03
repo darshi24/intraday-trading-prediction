@@ -40,7 +40,7 @@ for ticker in tickers:
 
     from github import Github
     pickled_model = pickle.dumps(reg)
-    access_token = "f81a09b3450a081764fe730447c4e630b3f95b2f"
+    access_token = "***************************************"
     g = Github(access_token)
     user = g.get_user()
     repo = user.get_repo('test')
