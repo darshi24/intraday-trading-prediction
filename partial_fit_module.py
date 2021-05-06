@@ -2,7 +2,6 @@
 import pickle
 import requests
 import io
-import streamlit as st
 
 #LIST OF MODELS TO UPDATE
 tickers = ['AAPL','GOOG','MSFT','TSLA','IBM','ACN']
@@ -11,7 +10,7 @@ tickers = ['AAPL','GOOG','MSFT','TSLA','IBM','ACN']
 #UPDATING ALL MODELS ONE BY ONE
 for ticker in tickers:
     #LOADING THE MODEL FROM GITHUB
-    repo = "Testing"
+    repo = "test"
     url = "https://github.com/darshi24/"+repo+"/blob/main/"+ticker+".p?raw=true"
     byte_content = requests.get(url).content
     model = io.BytesIO(byte_content)
